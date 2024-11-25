@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #101010;
+            color: #f4f4f4;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1e1e1e, #333);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f54323;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #f54323;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        section img {
+            max-width: 20%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #f54323;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background-color: #b83018;
+        }
+
+        #welcomeMessage {
+            font-size: 1.3rem;
+            color: #f54323;
+            margin-top: 20px;
+            display: none;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://1000logos.net/wp-content/uploads/2021/06/F1-logo.png" alt="Logo da Fórmula 1">
+        <h1>Fórmula 1</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Pilotos</a>
+            <a href="#">Equipes</a>
+            <a href="#">Notícias</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bem-vindo ao Mundo da Fórmula 1</h2>
+        <p>A Fórmula 1 é uma das competições de automobilismo mais prestigiadas e emocionantes do mundo. Corridas em circuitos históricos, pilotos talentosos e carros de alta performance. Prepare-se para a velocidade e a adrenalina das pistas!</p>
+        <img src="https://cdn-3.motorsport.com/images/amp/27vn3M30/s1000/lewis-hamilton-mercedes-f1-w11.jpg" alt="Fórmula 1 em ação">
+        <button onclick="showWelcomeMessage()">Clique para ver a mensagem de boas-vindas!</button>
+        <div id="welcomeMessage">Bem-vindo ao site da Fórmula 1! Prepare-se para a velocidade!</div>
+    </section>
+
+    <footer>
+        <p>Autor: Felipe Rovigo</p>
+        <p>Contato: felipe.rovigo@gmail.com</p>
+    </footer>
+
+    <script>
+        function showWelcomeMessage() {
+            const message = document.getElementById("welcomeMessage");
+            message.style.display = "block";  
+        }
+
+        console.log("Bem-vindo ao site de Fórmula 1!");
+    </script>
+
+</body>
+</html>
